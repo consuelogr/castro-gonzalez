@@ -18,7 +18,9 @@ h1{letter-spacing:0.1em; color:rgba(255,255,255,0.75);}
 
 h2{letter-spacing:0.02em; color:rgba(255,255,255,0.5); padding:0.2em 0; }
 
-h3{letter-spacing:0.2em; color:rgba(0,0,0,1); padding:2em 0 0.6em 0; }
+h3{letter-spacing:0.2em; color:#000; padding:2em 0 0.6em 0;} /* QUIENES SOMOS Y PORTAFOLIO */
+
+
 
 #contenido{width:98%; margin:1% auto;}
 
@@ -54,7 +56,7 @@ video{
 
 #somos{
 	width:100%;
-	background:rgb(250,250,250);
+	background:rgb(255,255,255,1);
 	margin-bottom:2%;
 	}
 
@@ -65,50 +67,50 @@ video{
 	background-color:red;
 	}
 
-.dupla a{
-	color:rgba(0,101,169,1);
+.dupla a{ /* primer color mail */
+	color:#81BEF7;
 	text-decoration:none;
 	font-weight:700;
 	transition: 0.3s ease all;
 }
 
-.dupla a:hover{
-	color:rgba(179,142,80,1);
+.dupla a:hover{ /*segundo color mail */
+	color:#F78181;
 	text-decoration:underline;
 }
 
 .primera{
 	min-height:300px;
 	text-align:left;
-	background-color:rgba(241,230,210,1);
+	background-color:rgba(255,255,255,1);
 	background-image:url('media/dupla-01.jpg');
 	background-position:top right;
 	background-repeat:no-repeat;
 	background-size:auto 100%;
 }
-.primera h4{padding: 2% 40% 1% 2%;}
+.primera h4{padding: 2% 40% 1% 2%; color:#F78181;} /* Nicolás Castro */
 
-.primera h5{padding: 1% 40% 2% 2%; margin-bottom:5em; letter-spacing:0.1em;}
+.primera h5{padding: 1% 40% 2% 2%; margin-bottom:5em; letter-spacing:0.1em;color:#F78181;} /* Slogan Bacán */
 
-.primera p{padding: 2% 40% 2% 2%;}
+.primera p{padding: 2% 40% 2% 2%;color:#BDBDBD;} /* descripción */
 
 .primera address{padding: 2% 40% 2% 2%; font-size:0.9em; font-style:normal;}
 
 .segunda{
 	min-height:300px;
 	text-align:right;
-	background-color:rgba(231,240,239,1);
+	background-color:rgba(255,255,255,1);
 	background-image:url('media/dupla-02.jpg');
 	background-position:top left;
 	background-repeat:no-repeat;
 	background-size:auto 100%;
 }
 
-.segunda h4{padding: 2% 2% 1% 40%;}
+.segunda h4{padding: 2% 2% 1% 40%;color:#F78181;} /* Consuelo González */
 
-.segunda h5{padding: 1% 2% 2% 40%; margin-bottom:5em; letter-spacing:0.1em;}
+.segunda h5{padding: 1% 2% 2% 40%; margin-bottom:5em; letter-spacing:0.1em;color:#F78181;} /* slogan bacán */
 
-.segunda p{padding: 2% 2% 2% 40%;}
+.segunda p{padding: 2% 2% 2% 40%;color:#BDBDBD} /* descripción */
 
 .segunda address{padding: 2% 2% 2% 40%; font-size:0.9em; font-style:normal;}
 
@@ -119,7 +121,7 @@ video{
 
 #portafolio{
 	width:100%;
-	background:rgb(250,250,250);
+	background:rgb(255,255,255,1);
 	padding-bottom:1%;
 	/* 4 veces lo mismo, para que funcione en distintos navegadores */
 	-webkit-animation: fondo 3s infinite linear alternate;
@@ -129,31 +131,32 @@ video{
 	}
 
 @-webkit-keyframes fondo {
-	from {background-color:rgba(241,230,210,1);}
-	to {background-color:rgba(231,240,239,1);}
+	from {background-color:rgba(255,255,255,1);}
+	to {background-color:rgba(255,255,255,1);}
 }
 
 @-moz-keyframes fondo {
-	from {background-color:rgba(241,230,210,1);}
-	to {background-color:rgba(231,240,239,1);}
+	from {background-color:rgba(255,255,255,1);}
+	to {background-color:rgba(255,255,255,1);}
 }
 
 @-ms-keyframes fondo {
-	from {background-color:rgba(241,230,210,1);}
-	to {background-color:rgba(231,240,239,1);}
+	from {background-color:rgba(255,255,255,1);}
+	to {background-color:rgba(255,255,255,1);}
 }
 
 @keyframes fondo {
-	from {background-color:rgba(241,230,210,1);}
-	to {background-color:rgba(231,240,239,1);}
+	from {background-color:rgba(255,255,255,1);}
+	to {background-color:rgba(255,255,255,1);}
 }
 
 .item {
 	width:23%;
 	margin:1%;
-	color:#333;
-	background:white;
+	color:#FFF; /* color letra cajita */
+	background:#BDBDBD; /* color fondo cajita */
 	box-shadow:0 0 5px rgb(240,240,240);
+
 }
 
 .item figure{overflow:hidden;}
@@ -177,6 +180,7 @@ video{
 	font-size:1em;
 	letter-spacing:0.025em;
 	margin:5% 5% 3% 5%;
+
 }
 
 .item p{
@@ -195,10 +199,11 @@ footer p{
 	text-transform:uppercase;
 	letter-spacing:0.1em;
 	font-size:0.9em;
+	color:#BDBDBD /* Color pie de página web */
 	}
 
 footer hr{
-	border:2px solid #000;
+	border:2px solid #000; /* Color borde de abajo */
 	width:10%;
 	margin:2em auto 0 auto;
 	}
@@ -213,9 +218,14 @@ footer hr{
 	.item{
 		width:48%;
 		margin:1%;
-		background:black;
-		color:#ddd
+		background:#F5A9A9; /* Color cajita pequeña */
+		color:#FFF; /* color letra cajita pequeña */
 	}
+	h3{letter-spacing:0.2em; color:#F78181; padding:2em 0 0.6em 0;} /* QUIENES SOMOS Y PORTAFOLIO */
+
+	footer p{
+		color:#F78181; /* Color pie de página web */
+		}
 
 	footer hr{
 	width:20%;
