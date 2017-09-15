@@ -33,7 +33,7 @@ header{
 	color:white;
 	}
 
-header svg{height: 150px; width:auto;}
+header svg{height: 250px; width:auto;}
 
 @media screen and (max-width: 980px){
 	/*En caso que la pantalla no alcance el ancho de 980px… */
@@ -81,38 +81,38 @@ video{
 
 .primera{
 	min-height:300px;
-	text-align:left;
 	background-color:rgba(255,255,255,1);
 	background-image:url('media/dupla-01.jpg');
-	background-position:top right;
-	background-repeat:no-repeat;
-	background-size:auto 100%;
-}
-.primera h4{padding: 2% 40% 1% 2%; color:#F78181;} /* Nicolás Castro */
-
-.primera h5{padding: 1% 40% 2% 2%; margin-bottom:5em; letter-spacing:0.1em;color:#F78181;} /* Slogan Bacán */
-
-.primera p{padding: 2% 40% 2% 2%;color:#BDBDBD;} /* descripción */
-
-.primera address{padding: 2% 40% 2% 2%; font-size:0.9em; font-style:normal;}
-
-.segunda{
-	min-height:300px;
-	text-align:right;
-	background-color:rgba(255,255,255,1);
-	background-image:url('media/dupla-02.jpg');
 	background-position:top left;
 	background-repeat:no-repeat;
 	background-size:auto 100%;
 }
+.primera h4{padding: 2% 1% 1% 2%; color:#F78181;text-align: right;} /* Nicolás Castro */
 
-.segunda h4{padding: 2% 2% 1% 40%;color:#F78181;} /* Consuelo González */
+.primera h5{padding: 1% 1% 2% 2%; margin-bottom:2em; letter-spacing:0.1em;color:#F78181; text-align: right;} /* Slogan Bacán */
 
-.segunda h5{padding: 1% 2% 2% 40%; margin-bottom:5em; letter-spacing:0.1em;color:#F78181;} /* slogan bacán */
+.primera p{padding: 2% 1% 2% 50%;color:#BDBDBD;text-align: justify;}{ /* descripción */
 
-.segunda p{padding: 2% 2% 2% 40%;color:#BDBDBD} /* descripción */
+}
 
-.segunda address{padding: 2% 2% 2% 40%; font-size:0.9em; font-style:normal;}
+.primera address{padding: 2% 1% 2% 2%; font-size:0.9em; font-style:normal; text-align: right;}
+
+.segunda{
+	min-height:300px;
+	background-color:rgba(255,255,255,1);
+	background-image:url('media/dupla-02.jpg');
+	background-position:top right;
+	background-repeat:no-repeat;
+	background-size:auto 100%;
+}
+
+.segunda h4{padding: 2% 2% 1% 1%;color:#F78181;	text-align:left;} /* Consuelo González */
+
+.segunda h5{padding: 1% 2% 2% 1%; margin-bottom:2em; letter-spacing:0.1em;color:#F78181;	text-align:left;} /* slogan bacán */
+
+.segunda p{padding: 2% 50% 2% 1%;color:#BDBDBD; text-align: justify;} /* descripción */
+
+.segunda address{padding: 2% 2% 2% 1%; font-size:0.9em; font-style:normal;	text-align:left;}
 
 #somos hr{
 	clear:both;
@@ -157,8 +157,8 @@ video{
 	background:#BDBDBD; /* color fondo cajita */
 	box-shadow:0 0 5px rgb(240,240,240);
 
-}
 
+}
 .item figure{overflow:hidden;}
 
 .item figure img{width:100%; height:auto; margin-bottom:-4px;}
@@ -166,10 +166,10 @@ video{
 .item:hover{cursor:crosshair;}
 
 .item:hover figure img{
-	-webkit-transform:scale(1.2);
-	-moz-transform:scale(1.2);
-	-ms-transform:scale(1.2);
-	transform:scale(1.2);
+	-webkit-transform:scale(1.1);
+	-moz-transform:scale(1.1);
+	-ms-transform:scale(1.1);
+	transform:scale(1.1);
 	-webkit-transition:-webkit-transform ease-out 0.5s;
 	-moz-transition:-moz-transform ease-out 0.5s;
 	-ms-transition:-ms-transform ease-out 0.5s;
@@ -180,6 +180,19 @@ video{
 	font-size:1em;
 	letter-spacing:0.025em;
 	margin:5% 5% 3% 5%;
+
+}
+	.item a{ /* primer color titulos */
+		color:#FFF;
+		text-decoration:none;
+		font-weight:700;
+		transition: 0.3s ease all;
+	}
+
+	.item a:hover{ /*segundo color titulos */
+		color:#000;
+
+
 
 }
 
